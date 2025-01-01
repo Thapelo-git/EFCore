@@ -143,3 +143,4 @@
 /home/thapelo/Documents/cs12dotnet8/Chapter10/WorkingWithEFCore/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 /home/thapelo/Documents/cs12dotnet8/Chapter10/WorkingWithEFCore/bin/Debug/net8.0/runtimes/linux-musl-s390x/native/libe_sqlite3.so
 /home/thapelo/Documents/cs12dotnet8/Chapter10/WorkingWithEFCore/bin/Debug/net8.0/runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll
+/home/thapelo/Documents/cs12dotnet8/Chapter10/WorkingWithEFCore/obj/Debug/net8.0/WorkingWithEFCore.sourcelink.json

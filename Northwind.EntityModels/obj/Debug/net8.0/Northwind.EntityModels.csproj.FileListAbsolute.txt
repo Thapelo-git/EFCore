@@ -9,3 +9,4 @@
 /home/thapelo/Documents/cs12dotnet8/Chapter10/Northwind.EntityModels/obj/Debug/net8.0/refint/Northwind.EntityModels.dll
 /home/thapelo/Documents/cs12dotnet8/Chapter10/Northwind.EntityModels/obj/Debug/net8.0/Northwind.EntityModels.pdb
 /home/thapelo/Documents/cs12dotnet8/Chapter10/Northwind.EntityModels/obj/Debug/net8.0/ref/Northwind.EntityModels.dll
+/home/thapelo/Documents/cs12dotnet8/Chapter10/Northwind.EntityModels/obj/Debug/net8.0/Northwind.EntityModels.sourcelink.json
