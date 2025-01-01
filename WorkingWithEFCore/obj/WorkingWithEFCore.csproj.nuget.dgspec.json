@@ -1,0 +1,130 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/thapelo/Documents/cs12dotnet8/Chapter10/WorkingWithEFCore/WorkingWithEFCore.csproj": {}
+  },
+  "projects": {
+    "/home/thapelo/Documents/cs12dotnet8/Chapter10/Northwind.EntityModels/Northwind.EntityModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/thapelo/Documents/cs12dotnet8/Chapter10/Northwind.EntityModels/Northwind.EntityModels.csproj",
+        "projectName": "Northwind.EntityModels",
+        "projectPath": "/home/thapelo/Documents/cs12dotnet8/Chapter10/Northwind.EntityModels/Northwind.EntityModels.csproj",
+        "packagesPath": "/home/thapelo/.nuget/packages/",
+        "outputPath": "/home/thapelo/Documents/cs12dotnet8/Chapter10/Northwind.EntityModels/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/thapelo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.111/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/thapelo/Documents/cs12dotnet8/Chapter10/WorkingWithEFCore/WorkingWithEFCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/thapelo/Documents/cs12dotnet8/Chapter10/WorkingWithEFCore/WorkingWithEFCore.csproj",
+        "projectName": "WorkingWithEFCore",
+        "projectPath": "/home/thapelo/Documents/cs12dotnet8/Chapter10/WorkingWithEFCore/WorkingWithEFCore.csproj",
+        "packagesPath": "/home/thapelo/.nuget/packages/",
+        "outputPath": "/home/thapelo/Documents/cs12dotnet8/Chapter10/WorkingWithEFCore/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/thapelo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/thapelo/Documents/cs12dotnet8/Chapter10/Northwind.EntityModels/Northwind.EntityModels.csproj": {
+                "projectPath": "/home/thapelo/Documents/cs12dotnet8/Chapter10/Northwind.EntityModels/Northwind.EntityModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.111/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
