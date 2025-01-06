@@ -20,6 +20,7 @@
 <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 </PackageReference>
 <PackageReference Version="9.0.0" Include="Microsoft.EntityFrameworkCore.Sqlite" />
+<PackageReference Version="8.0.0" Include="Microsoft.EntityFrameworkCore.Proxies" />
 </ItemGroup>
 <ItemGroup>
 <ProjectReference Include="..\Northwind.EntityModels\Northwind.EntityModels.csproj" />

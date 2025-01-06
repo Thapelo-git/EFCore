@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Northwind.EntityModels;
-
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 partial class Program
 {
 private static void QueryingCategories()
@@ -8,7 +8,27 @@ private static void QueryingCategories()
 using NorthwindDb db = new();
 SectionTitle("Categories and how many products they have");
 // A query to get all categories and their related products.
-IQueryable<Category>? categories = db.Categories?.Include(c => c.Products);
+IQueryable<Category>? categories;
+// = db.Categories;
+//.Include(c => c.Products);
+db.ChangeTracker.LazyLoadingEnabled = false;
+Write("Enable eager loading? (Y/N): ");
+bool eagerLoading = (ReadKey().Key == ConsoleKey.Y);
+bool explicitLoading = false;
+WriteLine();
+if (eagerLoading)
+{
+categories = db.Categories?.Include(c => c.Products);
+}
+else
+{
+categories = db.Categories;
+Write("Enable explicit loading? (Y/N): ");
+explicitLoading = (ReadKey().Key == ConsoleKey.Y);
+WriteLine();
+}
+
+
 if (categories is null || !categories.Any())
 {
 Fail("No categories found.");
@@ -17,6 +37,18 @@ return;
 // Execute query and enumerate results.
 foreach (Category c in categories)
 {
+    if (explicitLoading)
+{
+Write($"Explicitly load products for {c.CategoryName}? (Y/N): ");
+ConsoleKeyInfo key = ReadKey();
+WriteLine();
+if (key.Key == ConsoleKey.Y)
+{
+CollectionEntry<Category, Product> products =
+db.Entry(c).Collection(c2 => c2.Products);
+if (!products.IsLoaded) products.Load();
+}
+}
 WriteLine($"{c.CategoryName} has {c.Products.Count} products.");
 }
 }
@@ -122,5 +154,25 @@ foreach (Product p in products)
 WriteLine("{0} has {1} units in stock. Discontinued: {2}",
 p.ProductName, p.Stock, p.Discontinued);
 }
+}
+
+private static void GetRandomProduct()
+{
+using NorthwindDb db = new();
+SectionTitle("Get a random product");
+int? rowCount = db.Products?.Count();
+if (rowCount is null)
+{
+Fail("Products table is empty.");
+return;
+}
+Product? p = db.Products?.FirstOrDefault(
+p => p.ProductId == (int)(EF.Functions.Random() * rowCount));
+if (p is null)
+{
+Fail("Product not found.");
+return;
+}
+WriteLine($"Random product: {p.ProductId} - {p.ProductName}");
 }
 }

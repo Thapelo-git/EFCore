@@ -24,6 +24,7 @@ optionsBuilder.LogTo(WriteLine,new[] { RelationalEventId.CommandExecuting }) // 
 .EnableDetailedErrors()
 #endif
 ;
+optionsBuilder.UseLazyLoadingProxies();
 }
 
 
@@ -43,5 +44,9 @@ modelBuilder.Entity<Product>()
 .Property(product => product.Cost)
 .HasConversion<double>();
 }
+
+// A global filter to remove discontinued products.
+modelBuilder.Entity<Product>()
+.HasQueryFilter(p => !p.Discontinued);
 }
 }
