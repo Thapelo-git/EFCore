@@ -49,4 +49,50 @@ int affected = db.SaveChanges();
 WriteLine($"State: {entity.State}, ProductId: {p.ProductId}");
 return (affected, p.ProductId);
 }
+private static (int affected, int productId) IncreaseProductPrice(
+string productNameStartsWith, decimal amount)
+{
+using NorthwindDb db = new();
+if (db.Products is null) return (0, 0);
+// Get the first product whose name starts with the parameter value.
+Product updateProduct = db.Products.First(
+p => p.ProductName.StartsWith(productNameStartsWith));
+updateProduct.Cost += amount;
+int affected = db.SaveChanges();
+return (affected, updateProduct.ProductId);
+}
+private static int DeleteProducts(string productNameStartsWith)
+{
+using NorthwindDb db = new();
+IQueryable<Product>? products = db.Products?.Where(
+p => p.ProductName.StartsWith(productNameStartsWith));
+if (products is null || !products.Any())
+{
+WriteLine("No products found to delete.");
+return 0;
+}
+else
+{
+if (db.Products is null) return 0;
+db.Products.RemoveRange(products);
+}
+int affected = db.SaveChanges();
+return affected;
+}
+
+private static (int affected, int[]? productIds)
+IncreaseProductPricesBetter(
+string productNameStartsWith, decimal amount)
+{
+    using NorthwindDb db = new();
+if (db.Products is null) return (0, null);
+// Get products whose name starts with the parameter value.
+IQueryable<Product>? products = db.Products.Where(
+p => p.ProductName.StartsWith(productNameStartsWith));
+int affected = products.ExecuteUpdate(s => s.SetProperty(
+p => p.Cost, // Property selector lambda expression.
+p => p.Cost + amount)); // Value to update to lambda expression.
+int[] productIds = products.Select(p => p.ProductId).ToArray();
+return (affected, productIds);
+}
 }
