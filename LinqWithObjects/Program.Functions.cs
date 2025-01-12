@@ -23,4 +23,24 @@ names[2] = "Jimmy"; // Change Jim to Jimmy.
 // end with an "m" so it does not get output.
 }
 }
+static bool NameLongerThanFour(string name)
+{
+// Returns true for a name longer than four characters.
+return name.Length > 4;
 }
+private static void FilteringUsingWhere(string[] names)
+{
+   
+//     var query = names.Where(
+// new Func<string, bool>(NameLongerThanFour));
+IOrderedEnumerable<string> query = names.
+Where(name => name.Length > 4)
+.OrderBy(name => name.Length)
+.ThenBy(name => name);
+foreach (string item in query)
+{
+WriteLine(item);
+}
+}
+}
+

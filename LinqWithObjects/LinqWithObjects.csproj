@@ -8,5 +8,6 @@
   </PropertyGroup>
 <ItemGroup>
 <Using Include="System.Console" Static="true" />
+<!-- <Using Remove="System.Linq" /> -->
 </ItemGroup>
 </Project>
