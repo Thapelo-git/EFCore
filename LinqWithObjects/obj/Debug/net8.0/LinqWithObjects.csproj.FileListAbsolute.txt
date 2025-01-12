@@ -1,0 +1,15 @@
+/home/thapelo/Documents/cs12dotnet8/Chapter10/LinqWithObjects/bin/Debug/net8.0/LinqWithObjects
+/home/thapelo/Documents/cs12dotnet8/Chapter10/LinqWithObjects/bin/Debug/net8.0/LinqWithObjects.deps.json
+/home/thapelo/Documents/cs12dotnet8/Chapter10/LinqWithObjects/bin/Debug/net8.0/LinqWithObjects.runtimeconfig.json
+/home/thapelo/Documents/cs12dotnet8/Chapter10/LinqWithObjects/bin/Debug/net8.0/LinqWithObjects.dll
+/home/thapelo/Documents/cs12dotnet8/Chapter10/LinqWithObjects/bin/Debug/net8.0/LinqWithObjects.pdb
+/home/thapelo/Documents/cs12dotnet8/Chapter10/LinqWithObjects/obj/Debug/net8.0/LinqWithObjects.GeneratedMSBuildEditorConfig.editorconfig
+/home/thapelo/Documents/cs12dotnet8/Chapter10/LinqWithObjects/obj/Debug/net8.0/LinqWithObjects.AssemblyInfoInputs.cache
+/home/thapelo/Documents/cs12dotnet8/Chapter10/LinqWithObjects/obj/Debug/net8.0/LinqWithObjects.AssemblyInfo.cs
+/home/thapelo/Documents/cs12dotnet8/Chapter10/LinqWithObjects/obj/Debug/net8.0/LinqWithObjects.csproj.CoreCompileInputs.cache
+/home/thapelo/Documents/cs12dotnet8/Chapter10/LinqWithObjects/obj/Debug/net8.0/LinqWithObjects.sourcelink.json
+/home/thapelo/Documents/cs12dotnet8/Chapter10/LinqWithObjects/obj/Debug/net8.0/LinqWithObjects.dll
+/home/thapelo/Documents/cs12dotnet8/Chapter10/LinqWithObjects/obj/Debug/net8.0/refint/LinqWithObjects.dll
+/home/thapelo/Documents/cs12dotnet8/Chapter10/LinqWithObjects/obj/Debug/net8.0/LinqWithObjects.pdb
+/home/thapelo/Documents/cs12dotnet8/Chapter10/LinqWithObjects/obj/Debug/net8.0/LinqWithObjects.genruntimeconfig.cache
+/home/thapelo/Documents/cs12dotnet8/Chapter10/LinqWithObjects/obj/Debug/net8.0/ref/LinqWithObjects.dll
