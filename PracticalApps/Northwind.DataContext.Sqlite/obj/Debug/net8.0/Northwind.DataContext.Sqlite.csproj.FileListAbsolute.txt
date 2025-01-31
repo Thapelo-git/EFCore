@@ -1,0 +1,16 @@
+/home/thapelo/Documents/cs12dotnet8/Chapter10/PracticalApps/Northwind.DataContext.Sqlite/bin/Debug/net8.0/Northwind.DataContext.Sqlite.deps.json
+/home/thapelo/Documents/cs12dotnet8/Chapter10/PracticalApps/Northwind.DataContext.Sqlite/bin/Debug/net8.0/Northwind.DataContext.Sqlite.dll
+/home/thapelo/Documents/cs12dotnet8/Chapter10/PracticalApps/Northwind.DataContext.Sqlite/bin/Debug/net8.0/Northwind.DataContext.Sqlite.pdb
+/home/thapelo/Documents/cs12dotnet8/Chapter10/PracticalApps/Northwind.DataContext.Sqlite/bin/Debug/net8.0/Northwind.EntityModels.Sqlite.dll
+/home/thapelo/Documents/cs12dotnet8/Chapter10/PracticalApps/Northwind.DataContext.Sqlite/bin/Debug/net8.0/Northwind.EntityModels.Sqlite.pdb
+/home/thapelo/Documents/cs12dotnet8/Chapter10/PracticalApps/Northwind.DataContext.Sqlite/obj/Debug/net8.0/Northwind.DataContext.Sqlite.csproj.AssemblyReference.cache
+/home/thapelo/Documents/cs12dotnet8/Chapter10/PracticalApps/Northwind.DataContext.Sqlite/obj/Debug/net8.0/Northwind.DataContext.Sqlite.GeneratedMSBuildEditorConfig.editorconfig
+/home/thapelo/Documents/cs12dotnet8/Chapter10/PracticalApps/Northwind.DataContext.Sqlite/obj/Debug/net8.0/Northwind.DataContext.Sqlite.AssemblyInfoInputs.cache
+/home/thapelo/Documents/cs12dotnet8/Chapter10/PracticalApps/Northwind.DataContext.Sqlite/obj/Debug/net8.0/Northwind.DataContext.Sqlite.AssemblyInfo.cs
+/home/thapelo/Documents/cs12dotnet8/Chapter10/PracticalApps/Northwind.DataContext.Sqlite/obj/Debug/net8.0/Northwind.DataContext.Sqlite.csproj.CoreCompileInputs.cache
+/home/thapelo/Documents/cs12dotnet8/Chapter10/PracticalApps/Northwind.DataContext.Sqlite/obj/Debug/net8.0/Northwind.DataContext.Sqlite.sourcelink.json
+/home/thapelo/Documents/cs12dotnet8/Chapter10/PracticalApps/Northwind.DataContext.Sqlite/obj/Debug/net8.0/Northwind.DataContext.Sqlite.csproj.CopyComplete
+/home/thapelo/Documents/cs12dotnet8/Chapter10/PracticalApps/Northwind.DataContext.Sqlite/obj/Debug/net8.0/Northwind.DataContext.Sqlite.dll
+/home/thapelo/Documents/cs12dotnet8/Chapter10/PracticalApps/Northwind.DataContext.Sqlite/obj/Debug/net8.0/refint/Northwind.DataContext.Sqlite.dll
+/home/thapelo/Documents/cs12dotnet8/Chapter10/PracticalApps/Northwind.DataContext.Sqlite/obj/Debug/net8.0/Northwind.DataContext.Sqlite.pdb
+/home/thapelo/Documents/cs12dotnet8/Chapter10/PracticalApps/Northwind.DataContext.Sqlite/obj/Debug/net8.0/ref/Northwind.DataContext.Sqlite.dll
